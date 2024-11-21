@@ -82,7 +82,7 @@ const EventCard = () => {
 
 function Banner() {
   return (
-    <div className="bg-gray-300 flex items-center justify-center">
+    <div className="bg-slate-300 flex items-center justify-center">
       <EventCard />
     </div>
   );
