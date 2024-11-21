@@ -4,6 +4,7 @@ import {
   faCaretDown,
   faMagnifyingGlass,
 } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 
 const data = [
   {
@@ -32,7 +33,9 @@ export default function Header() {
   return (
     <div className="bg-[#f1692f] flex justify-between">
       <div className="flex">
-        <img src={logo} className="invert brightness-0" width={"100px"} />
+        <Link to={"/"}>
+          <img src={logo} className="invert brightness-0" width={"100px"} />
+        </Link>
         <div className="flex gap-5 ml-5">
           {data.map((d) => (
             <div

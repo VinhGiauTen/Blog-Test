@@ -1,15 +1,16 @@
-import Banner from "./components/Banner";
-import Content from "./components/Content";
-import Event from "./components/Event";
-import Header from "./components/Header";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import HomePage from "./components/HomePage";
+import ContentPage from "./components/ContentPage";
 
 export default function App() {
   return (
     <>
-      <Header />
-      <Banner />
-      <Event />
-      <Content />
+      <Router>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/content" element={<ContentPage />} />
+        </Routes>
+      </Router>
     </>
   );
 }

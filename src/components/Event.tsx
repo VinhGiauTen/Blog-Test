@@ -3,6 +3,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 
 const Carousel = () => {
   const settings = {
@@ -131,16 +132,18 @@ export default function Event() {
         </div>
         <div>
           {data.map((d) => (
-            <div key={d.id} className="flex space-x-4 my-5 relative">
-              <div className="bg-[#D9D9D9] rounded-xl h-[180px] w-[400px]"></div>
-              <div className="text-[14px] w-2/3">
-                <p className="text-[#F1692F] font-semibold">{d.title}</p>
-                <p>{d.content}</p>
+            <Link to={"/content"} key={d.id}>
+              <div className="flex space-x-4 my-5 relative">
+                <div className="bg-[#D9D9D9] rounded-xl h-[180px] w-[400px]"></div>
+                <div className="text-[14px] w-2/3">
+                  <p className="text-[#F1692F] font-semibold">{d.title}</p>
+                  <p>{d.content}</p>
+                </div>
+                <p className="underline text-orange-500 absolute bottom-0 right-0">
+                  Xem thêm
+                </p>
               </div>
-              <p className="underline text-orange-500 absolute bottom-0 right-0">
-                Xem thêm
-              </p>
-            </div>
+            </Link>
           ))}
         </div>
       </div>
