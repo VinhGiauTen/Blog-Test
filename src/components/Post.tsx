@@ -59,8 +59,8 @@ export default function Post() {
           Hưng - Học Data là 1 quá trình và mình đã vượt qua nó như nào
         </p>
       </div>
-      <div className="my-10 flex w-3/4 mx-auto gap-10">
-        <div className="basis-3/4 mr-24">
+      <div className="my-10 grid grid-cols-4 items-start w-3/4 mx-auto gap-5">
+        <div className="col-span-3 mr-24">
           <div className="text-orange-500 text-2xl font-bold my-2">
             Bạn Nguyễn Quang Hưng - Học DATA là 1 quá trình và mình đã vượt qua
             nó như nào
@@ -85,7 +85,8 @@ export default function Post() {
           <Text />
           <Text />
         </div>
-        <div className="basis-1/4">
+        {/* Banner & Các khóa học */}
+        <div className="sticky top-8">
           <div className="bg-orange-500 h-96 mb-10"></div>
           <div className="text-orange-500 text-2xl font-bold my-3">
             Các khóa học
@@ -112,7 +113,7 @@ export default function Post() {
               </select>
             </div>
             <div className="flex justify-center">
-              <button className="bg-black text-white p-2 px-5 rounded font-bold">
+              <button className="bg-black text-white p-2 px-5 rounded font-bold hover:-translate-y-2 transition">
                 Đăng ký tư vấn
               </button>
             </div>

@@ -5,6 +5,15 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 
+//  Dữ liệu ảnh
+const images = [
+  ["Image 1", "Image 2", "Image 3"],
+  ["Image 4", "Image 5", "Image 6"],
+  ["Image 7", "Image 8", "Image 9"],
+  ["Image 10", "Image 11", "Image 12"],
+  ["Image 13", "Image 14", "Image 15"],
+];
+
 const Carousel = () => {
   const settings = {
     dots: true, // Hiển thị chấm chỉ báo
@@ -17,27 +26,18 @@ const Carousel = () => {
     autoplaySpeed: 3000, // Chuyển slide mỗi 3 giây
   };
 
-  // Dữ liệu ảnh
-  const images = [
-    ["Image 1", "Image 2", "Image 3"],
-    ["Image 4", "Image 5", "Image 6"],
-    ["Image 7", "Image 8", "Image 9"],
-    ["Image 10", "Image 11", "Image 12"],
-    ["Image 13", "Image 14", "Image 15"],
-  ];
-
   return (
     <div className="w-full max-w-md mx-auto mt-10 relative">
       {/* Slider */}
       <Slider {...settings}>
         {images.map((group, index) => (
           <div key={index} className="flex flex-col">
-            {group.map((image, idx) => (
+            {group.map((idx) => (
               <div
                 key={idx}
                 className="h-52 bg-orange-500 flex items-center justify-center rounded-xl m-5"
               >
-                <p className="text-white text-lg">{image}</p>
+                <p className="text-white text-lg"></p>
               </div>
             ))}
           </div>

@@ -86,7 +86,7 @@ export default function Footer() {
   return (
     <div className="bg-[#3E3E3E]">
       <div className=" p-5 flex space-x-5 w-4/5 mx-auto">
-        <img src={img} className="w-[500px] h-max p-5 basis-1/4" />
+        <img src={img} className="w-[400px] h-max p-5 basis-1/4" />
         <div className="basis-3/4 flex">
           <List list={hanoi} city="Hà Nội" />
           <List list={hcm} city="Hồ Chí Minh" />

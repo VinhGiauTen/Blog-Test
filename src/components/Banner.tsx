@@ -52,20 +52,12 @@ const EventCard = () => {
             EMPOWERING YOUR DATA ANALYSIS AND IT CAREER IN THE AGE OF AUTOMATION
             ZOOM MEETING
           </h1>
-          <div className="flex justify-between content-center bg-orange-500 p-2 rounded-2xl w-4/5 mx-auto">
-            <div className="flex bg-white text-orange-500 text-lg p-1 rounded-xl uppercase font-bold tracking-widest content-center">
-              <img
-                src={logo3}
-                alt="Logo"
-                className="w-6 h-6 px-5 filter brightness-0 invert sepia saturate-500 hue-rotate-330"
-                style={{
-                  filter:
-                    "brightness(0) invert(1) sepia(1) saturate(1000%) hue-rotate(15deg)",
-                }}
-              />
+          <div className="flex justify-between content-center items-center bg-orange-500 p-2 rounded-2xl w-4/5 mx-auto px-5">
+            <div className="flex bg-white text-orange-500 text-lg p-1 rounded-xl uppercase font-bold tracking-widest items-center drop-shadow-2xl">
+              <img src={logo3} alt="Logo" className="h-6 px-2" />
               Zoom Meeting
             </div>
-            <div className=" text-white text-lg">
+            <div className="text-white text-lg">
               9:00 - 11:00 | Sunday | 26/03/2023
             </div>
           </div>

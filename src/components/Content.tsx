@@ -45,7 +45,7 @@ export default function Content() {
         </div>
         <div className="grid grid-cols-3 gap-4 my-5 w-2/3 mx-auto">
           {images.map((i) => (
-            <div key={i.id} className={`rounded-xl h-48 ${i.style}`}></div>
+            <div key={i.id} className={`rounded-xl h-56 ${i.style}`}></div>
           ))}
         </div>
       </div>
@@ -64,7 +64,7 @@ export default function Content() {
                 {d.title}
               </p>
               <p className="text-sm pb-8">{d.content}</p>
-              <p className="text-orange-500 absolute bottom-0 right-0">
+              <p className="text-orange-500 absolute bottom-0 right-0 hover:underline">
                 Xem thêm
               </p>
             </div>
